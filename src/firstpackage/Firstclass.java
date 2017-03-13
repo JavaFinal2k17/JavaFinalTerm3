@@ -26,10 +26,10 @@ public class Firstclass {
 	String Choice;
 	String choiceNorth;
 	String choiceSouth;
-	String choiceBack;
+	String choiceWest;
 	Scanner Input = null;
 	
-	
+
 	
 	
 	
@@ -70,19 +70,16 @@ public class Firstclass {
 	 String name1 = JOptionPane.showInputDialog(frame, "What way do you want to go?");
 	
 	Input.nextLine();
-	 
+	choiceNorth = 
+	choiceSouth = 
+	choiceWest = 
+												
 
 	
 	
 	
 	
-	//Three decisions are given(Choice)
-	
-	//Player chooses to give the citizen the finger
-	
-	//Player chooses to go north
 
-	//Player  chooses to disregard the citizen and head south
 	
 	
 
