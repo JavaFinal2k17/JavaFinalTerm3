@@ -19,68 +19,53 @@ public class Firstclass {
 	 */
 	public static void main(String[] args) 
 	{
-	Scanner keyboard = new Scanner(System.in);	
+		
+		
+		
+		//**Backstory                             
+				JOptionPane.showMessageDialog(null, "You were born into the safety of Vault 8, or its more popular name Vault City."
+						+ "\nYou are 17 years old, over the course of your short period in life you have gained a name for yourself."
+						+ "\nYou are known as The Wanderer. It is early April of the year 2227, 150 years after the world was laid to ruin by nuclear fire."
+						+ "\nYou wish to leave due to your adventurous lifestyle, you step outside of your home, seeing the real world for the first time."
+						+ "\nWhere will you go?");
 
-	String choiceYes;
-	String choiceNo;
-	String Choice;
-	String choiceNorth;
-	String choiceSouth;
-	String choiceWest;
-	Scanner Input = null;
-	
+				//Player name
+				 JFrame frame = new JFrame("InputDialog Example #1");
 
-	
-	
-	
-	//**Backstory                             
-	JOptionPane.showMessageDialog(null, "You were born into the safety of Vault 8, or its more popular name Vault City."
-			+ "\nCurrently you are 17 years, over the course of your short life you have gained a name for yourself."
-			+ "\nYou are known as The Wanderer. It is early April of the year 2227, 150 years after the world was laid to ruin by nuclear fire. "
-			+ "\nYou wish to leave due to your adventurous lifestyle, you step outside of your home, seeing the real world for the first time."
-			+ "\nWhere will The Wanderer go?");
+				 String name = JOptionPane.showInputDialog(frame, "What's your name?");
+				
+			 
+				//Weapons
+				JOptionPane.showMessageDialog(null,   name + " grabs one weapon before he/she leaves. A 10mm pistol"					
+				+ " \nWith 24 bullets. The player also gets 3 healing items, and a flashlight.");
+				
+				
+				//Story elements
+				JOptionPane.showMessageDialog(null, "Before you leave one of the other citizens tell you about a town called Gecko to the north."
+						+ " \nHe smirks at you and wishes you luck on your travels.");
+				
+				
+				//The decision that determines the story path the player will follow
+				String[] options = new String[] {"West", "North", "South"};
+			    int response = JOptionPane.showOptionDialog(null, "What direction would you like to go?", "Player Choice",
+			        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+			        null, options, options[0]);
+			    	
+			    	
 
-	//Player name
-	 JFrame frame = new JFrame("InputDialog Example #1");
-
-	 String name = JOptionPane.showInputDialog(frame, "What's your name?");
-	
- 
-	
-	//Weapons
-	JOptionPane.showMessageDialog(null,   name + " grabs one weapon before he/she leaves. A 10mm pistol"					
-	+ " \nWith 24 bullets. The player also gets 3 healing items(stimpacks), and a flashlight");
-	
-
-	
-	
-	//Resident tell you about a town.
-	JOptionPane.showMessageDialog(null, "One of the other citizens of the vault tell you about a town called Gecko to the north."
-			+ " \nHe smirks at you and wishes you luck on your travels.");
-	
-
-	
-	JOptionPane.showMessageDialog(null, "What way would you like to go?"
-										+ "\n To the west"
-										+ "\n To the north"
-										+ "\n Disregard the citizen and go south");
-	
-	 JFrame frame1 = new JFrame("InputDialog Example #1");
-
-	 String name1 = JOptionPane.showInputDialog(frame, "What way do you want to go?");
-	
-	Input.nextLine();
-	choiceNorth = 
-	choiceSouth = 
-	choiceWest = 
-												
-
-	
-	
-	
-	
-
-	
+		       if(response == 0)
+		       {
+		    	   ChoiceWest.main(args);
+		       }
+		       
+		       else if(response == 1)
+		       {
+		    	   North.main(args);
+		       }
+		       else
+		       {
+		    	   DirectionSouth.main(args);
+			   }
 	
 
 	
